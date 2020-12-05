@@ -14,6 +14,10 @@
 		53E5CEBF257B727500B870CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53E5CEBD257B727500B870CF /* LaunchScreen.storyboard */; };
 		53E5CEC7257B79FF00B870CF /* TasksTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CEC6257B79FF00B870CF /* TasksTabBarController.swift */; };
 		53E5CEC9257BBF4000B870CF /* EnteringVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CEC8257BBF4000B870CF /* EnteringVC.swift */; };
+		53E5CECE257BCF5800B870CF /* LabelOutputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CECD257BCF5800B870CF /* LabelOutputVC.swift */; };
+		53E5CED0257BD22D00B870CF /* PiFinderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CECF257BD22D00B870CF /* PiFinderVC.swift */; };
+		53E5CED2257BD4AA00B870CF /* TableOutputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */; };
+		53E5CED4257BD5EE00B870CF /* FibonacciVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		53E5CEC0257B727500B870CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53E5CEC6257B79FF00B870CF /* TasksTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksTabBarController.swift; sourceTree = "<group>"; };
 		53E5CEC8257BBF4000B870CF /* EnteringVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnteringVC.swift; sourceTree = "<group>"; };
+		53E5CECD257BCF5800B870CF /* LabelOutputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelOutputVC.swift; sourceTree = "<group>"; };
+		53E5CECF257BD22D00B870CF /* PiFinderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiFinderVC.swift; sourceTree = "<group>"; };
+		53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOutputVC.swift; sourceTree = "<group>"; };
+		53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +66,44 @@
 		53E5CEB1257B727000B870CF /* ParimatchHW */ = {
 			isa = PBXGroup;
 			children = (
+				53E5CECB257BCE7E00B870CF /* Views */,
+				53E5CECA257BCE6300B870CF /* Screens */,
 				53E5CEB2257B727000B870CF /* AppDelegate.swift */,
 				53E5CEB4257B727000B870CF /* SceneDelegate.swift */,
-				53E5CEB6257B727000B870CF /* FactorialVC.swift */,
 				53E5CEBB257B727500B870CF /* Assets.xcassets */,
 				53E5CEBD257B727500B870CF /* LaunchScreen.storyboard */,
 				53E5CEC0257B727500B870CF /* Info.plist */,
-				53E5CEC6257B79FF00B870CF /* TasksTabBarController.swift */,
-				53E5CEC8257BBF4000B870CF /* EnteringVC.swift */,
 			);
 			path = ParimatchHW;
+			sourceTree = "<group>";
+		};
+		53E5CECA257BCE6300B870CF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CEC8257BBF4000B870CF /* EnteringVC.swift */,
+				53E5CEB6257B727000B870CF /* FactorialVC.swift */,
+				53E5CECD257BCF5800B870CF /* LabelOutputVC.swift */,
+				53E5CECF257BD22D00B870CF /* PiFinderVC.swift */,
+				53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */,
+				53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		53E5CECB257BCE7E00B870CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CECC257BCE9600B870CF /* TabBars */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		53E5CECC257BCE9600B870CF /* TabBars */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CEC6257B79FF00B870CF /* TasksTabBarController.swift */,
+			);
+			path = TabBars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,10 +176,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E5CED2257BD4AA00B870CF /* TableOutputVC.swift in Sources */,
+				53E5CECE257BCF5800B870CF /* LabelOutputVC.swift in Sources */,
 				53E5CEC7257B79FF00B870CF /* TasksTabBarController.swift in Sources */,
+				53E5CED4257BD5EE00B870CF /* FibonacciVC.swift in Sources */,
 				53E5CEB7257B727000B870CF /* FactorialVC.swift in Sources */,
 				53E5CEC9257BBF4000B870CF /* EnteringVC.swift in Sources */,
 				53E5CEB3257B727000B870CF /* AppDelegate.swift in Sources */,
+				53E5CED0257BD22D00B870CF /* PiFinderVC.swift in Sources */,
 				53E5CEB5257B727000B870CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

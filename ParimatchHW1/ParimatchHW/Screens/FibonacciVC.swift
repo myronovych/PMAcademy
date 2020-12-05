@@ -1,5 +1,5 @@
 //
-//  FactorialVC.swift
+//  FibonacciVC.swift
 //  ParimatchHW
 //
 //  Created by rs on 05.12.2020.
@@ -8,13 +8,13 @@
 
 import UIKit
 
-class FactorialVC: UIViewController {
+class FibonacciVC: TableOutputVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .black
-    }
 
+        title = "Fibonacci"
+    }
+    
 
 }
-

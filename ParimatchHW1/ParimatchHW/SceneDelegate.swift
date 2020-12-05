@@ -20,11 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         let vc = TasksTabBarController()
-        let navController = UINavigationController(rootViewController: vc)
-        navController.navigationBar.tintColor = .black
-        navController.navigationBar.barTintColor = .yellow
         
-        window.rootViewController = navController
+        window.rootViewController = vc
         
         self.window = window
         self.window?.makeKeyAndVisible()
