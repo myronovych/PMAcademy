@@ -25,7 +25,7 @@ class LabelOutputVC: EnteringVC {
         answerLabel.translatesAutoresizingMaskIntoConstraints = false
         
         answerLabel.text = "Answer: "
-        answerLabel.font = UIFont(name: "Avenir-Black", size: 35)
+        answerLabel.font = UIFont(name: "Pari-Match-Bold", size: 35)
         answerLabel.textColor = .yellow
         
         NSLayoutConstraint.activate([
@@ -40,7 +40,7 @@ class LabelOutputVC: EnteringVC {
         resultLabel.translatesAutoresizingMaskIntoConstraints = false
         
         resultLabel.text = "-"
-        resultLabel.font = UIFont(name: "Avenir-Black", size: 35)
+        resultLabel.font = UIFont(name: "Pari-Match-Bold", size: 35)
         resultLabel.textColor = .gray
         
         NSLayoutConstraint.activate([

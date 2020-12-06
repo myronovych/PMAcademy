@@ -10,10 +10,18 @@ import UIKit
 
 class PiFinderVC: LabelOutputVC {
 
+    let piFinder = PiFinder()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Pi Finder"
+    }
+    
+    override func goButtonPressed() {
+        guard let str = enteringField.text, let num = Int(str) else { return }
+        
+        resultLabel.text = String(piFinder.findNIndex(n: num))
     }
 
 }

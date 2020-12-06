@@ -18,6 +18,11 @@
 		53E5CED0257BD22D00B870CF /* PiFinderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CECF257BD22D00B870CF /* PiFinderVC.swift */; };
 		53E5CED2257BD4AA00B870CF /* TableOutputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */; };
 		53E5CED4257BD5EE00B870CF /* FibonacciVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */; };
+		53E5CED7257BFD8B00B870CF /* Fibonacci.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED6257BFD8B00B870CF /* Fibonacci.swift */; };
+		53E5CEDA257C0BB600B870CF /* FibonacciCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CED9257C0BB600B870CF /* FibonacciCell.swift */; };
+		53E5CEDC257C182B00B870CF /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CEDB257C182B00B870CF /* Factorial.swift */; };
+		53E5CEDE257C22FF00B870CF /* PiFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E5CEDD257C22FF00B870CF /* PiFinder.swift */; };
+		53E5CEE1257C2D3500B870CF /* Parimatch-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53E5CEDF257C2C1700B870CF /* Parimatch-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +39,11 @@
 		53E5CECF257BD22D00B870CF /* PiFinderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiFinderVC.swift; sourceTree = "<group>"; };
 		53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableOutputVC.swift; sourceTree = "<group>"; };
 		53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciVC.swift; sourceTree = "<group>"; };
+		53E5CED6257BFD8B00B870CF /* Fibonacci.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fibonacci.swift; sourceTree = "<group>"; };
+		53E5CED9257C0BB600B870CF /* FibonacciCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FibonacciCell.swift; sourceTree = "<group>"; };
+		53E5CEDB257C182B00B870CF /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
+		53E5CEDD257C22FF00B870CF /* PiFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiFinder.swift; sourceTree = "<group>"; };
+		53E5CEDF257C2C1700B870CF /* Parimatch-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Parimatch-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +76,14 @@
 		53E5CEB1257B727000B870CF /* ParimatchHW */ = {
 			isa = PBXGroup;
 			children = (
+				53E5CED5257BFD7800B870CF /* Models */,
 				53E5CECB257BCE7E00B870CF /* Views */,
 				53E5CECA257BCE6300B870CF /* Screens */,
 				53E5CEB2257B727000B870CF /* AppDelegate.swift */,
 				53E5CEB4257B727000B870CF /* SceneDelegate.swift */,
 				53E5CEBB257B727500B870CF /* Assets.xcassets */,
 				53E5CEBD257B727500B870CF /* LaunchScreen.storyboard */,
+				53E5CEE0257C2C3700B870CF /* Fonts */,
 				53E5CEC0257B727500B870CF /* Info.plist */,
 			);
 			path = ParimatchHW;
@@ -81,11 +93,11 @@
 			isa = PBXGroup;
 			children = (
 				53E5CEC8257BBF4000B870CF /* EnteringVC.swift */,
+				53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */,
 				53E5CEB6257B727000B870CF /* FactorialVC.swift */,
 				53E5CECD257BCF5800B870CF /* LabelOutputVC.swift */,
 				53E5CECF257BD22D00B870CF /* PiFinderVC.swift */,
 				53E5CED1257BD4AA00B870CF /* TableOutputVC.swift */,
-				53E5CED3257BD5EE00B870CF /* FibonacciVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -93,6 +105,7 @@
 		53E5CECB257BCE7E00B870CF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				53E5CED8257C0BA600B870CF /* Cells */,
 				53E5CECC257BCE9600B870CF /* TabBars */,
 			);
 			path = Views;
@@ -104,6 +117,32 @@
 				53E5CEC6257B79FF00B870CF /* TasksTabBarController.swift */,
 			);
 			path = TabBars;
+			sourceTree = "<group>";
+		};
+		53E5CED5257BFD7800B870CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CED6257BFD8B00B870CF /* Fibonacci.swift */,
+				53E5CEDB257C182B00B870CF /* Factorial.swift */,
+				53E5CEDD257C22FF00B870CF /* PiFinder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		53E5CED8257C0BA600B870CF /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CED9257C0BB600B870CF /* FibonacciCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		53E5CEE0257C2C3700B870CF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				53E5CEDF257C2C1700B870CF /* Parimatch-Bold.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53E5CEBF257B727500B870CF /* LaunchScreen.storyboard in Resources */,
+				53E5CEE1257C2D3500B870CF /* Parimatch-Bold.otf in Resources */,
 				53E5CEBC257B727500B870CF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,14 +216,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E5CEDE257C22FF00B870CF /* PiFinder.swift in Sources */,
+				53E5CED7257BFD8B00B870CF /* Fibonacci.swift in Sources */,
 				53E5CED2257BD4AA00B870CF /* TableOutputVC.swift in Sources */,
 				53E5CECE257BCF5800B870CF /* LabelOutputVC.swift in Sources */,
+				53E5CEDC257C182B00B870CF /* Factorial.swift in Sources */,
 				53E5CEC7257B79FF00B870CF /* TasksTabBarController.swift in Sources */,
 				53E5CED4257BD5EE00B870CF /* FibonacciVC.swift in Sources */,
 				53E5CEB7257B727000B870CF /* FactorialVC.swift in Sources */,
 				53E5CEC9257BBF4000B870CF /* EnteringVC.swift in Sources */,
 				53E5CEB3257B727000B870CF /* AppDelegate.swift in Sources */,
 				53E5CED0257BD22D00B870CF /* PiFinderVC.swift in Sources */,
+				53E5CEDA257C0BB600B870CF /* FibonacciCell.swift in Sources */,
 				53E5CEB5257B727000B870CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

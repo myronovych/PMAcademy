@@ -9,6 +9,8 @@
 import UIKit
 
 class FactorialVC: LabelOutputVC {
+    
+    let factorial = Factorial()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,11 @@ class FactorialVC: LabelOutputVC {
         navigationItem.title = "Factorial"
     }
     
-    
+    override func goButtonPressed() {
+        guard let num = Int(enteringField.text ?? "0") else { return }
+        
+        resultLabel.text = String(factorial.factorialIteration(n: num))
+    }
 
 
 }
