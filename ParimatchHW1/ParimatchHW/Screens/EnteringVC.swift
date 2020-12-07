@@ -52,6 +52,7 @@ class EnteringVC: UIViewController {
         enteringField.backgroundColor = .white
         enteringField.font = UIFont(name: "Pari-Match-Bold", size: enterNLabel.font.pointSize)
         enteringField.keyboardType = .numberPad
+        enteringField.layer.cornerRadius = 5
         
         NSLayoutConstraint.activate([
             enteringField.bottomAnchor.constraint(equalTo: enterNLabel.bottomAnchor),
