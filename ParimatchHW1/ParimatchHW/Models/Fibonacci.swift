@@ -12,6 +12,7 @@ struct Fibonacci {
     var cachedValues = [0:0, 1:1]
     
     mutating func fib(n: Int) -> Int {
+        
         if let value = cachedValues[n] {
             return value
         } else {

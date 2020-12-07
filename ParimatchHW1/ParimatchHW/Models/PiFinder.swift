@@ -12,7 +12,7 @@ struct PiFinder {
     func findNIndex(n: Int) -> Character {
         let piString = String(Double.pi)
         
-        if n + 2 < 15, n >= 0 {
+        if n + 2 <= 15, n >= 0 {
             return Array(piString)[n + 2]
         }
         

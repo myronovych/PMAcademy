@@ -42,6 +42,7 @@ class LabelOutputVC: EnteringVC {
         resultLabel.text = "-"
         resultLabel.font = UIFont(name: "Pari-Match-Bold", size: 35)
         resultLabel.textColor = .gray
+        resultLabel.adjustsFontSizeToFitWidth = true
         
         NSLayoutConstraint.activate([
             resultLabel.leadingAnchor.constraint(equalTo: answerLabel.trailingAnchor, constant: 10),
