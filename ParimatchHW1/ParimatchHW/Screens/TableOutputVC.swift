@@ -22,6 +22,12 @@ class TableOutputVC: EnteringVC {
         view.addSubview(tableView)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
+        tableView.backgroundColor = .black
+        tableView.layer.borderWidth = 1
+        tableView.layer.borderColor = UIColor.yellow.cgColor
+        tableView.layer.cornerRadius = 5
+        tableView.separatorColor = .yellow
+        
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: enterNLabel.bottomAnchor, constant: 50),
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),

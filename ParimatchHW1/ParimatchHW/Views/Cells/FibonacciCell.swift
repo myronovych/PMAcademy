@@ -10,6 +10,9 @@ import UIKit
 class FibonacciCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: .value1, reuseIdentifier: reuseIdentifier)
+        backgroundColor = .black
+        textLabel?.textColor = .white
+        detailTextLabel?.textColor = .yellow
     }
     
     required init?(coder: NSCoder) {
