@@ -13,7 +13,6 @@
 		6DBE8A25258D50D500CA5417 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE8A23258D50D500CA5417 /* Main.storyboard */; };
 		6DBE8A27258D50D500CA5417 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE8A26258D50D500CA5417 /* Assets.xcassets */; };
 		6DBE8A2A258D50D500CA5417 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE8A28258D50D500CA5417 /* LaunchScreen.storyboard */; };
-		6DBE8A33258D58C100CA5417 /* CalculatorButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DBE8A32258D58C100CA5417 /* CalculatorButton.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		6DBE8A26258D50D500CA5417 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DBE8A29258D50D500CA5417 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DBE8A2B258D50D500CA5417 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DBE8A32258D58C100CA5417 /* CalculatorButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculatorButton.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 				6DBE8A1F258D50D500CA5417 /* SceneDelegate.swift */,
 				6DBE8A21258D50D500CA5417 /* ViewController.swift */,
 				6DBE8A23258D50D500CA5417 /* Main.storyboard */,
-				6DBE8A32258D58C100CA5417 /* CalculatorButton.xib */,
 				6DBE8A26258D50D500CA5417 /* Assets.xcassets */,
 				6DBE8A28258D50D500CA5417 /* LaunchScreen.storyboard */,
 				6DBE8A2B258D50D500CA5417 /* Info.plist */,
@@ -130,7 +127,6 @@
 				6DBE8A2A258D50D500CA5417 /* LaunchScreen.storyboard in Resources */,
 				6DBE8A27258D50D500CA5417 /* Assets.xcassets in Resources */,
 				6DBE8A25258D50D500CA5417 /* Main.storyboard in Resources */,
-				6DBE8A33258D58C100CA5417 /* CalculatorButton.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
