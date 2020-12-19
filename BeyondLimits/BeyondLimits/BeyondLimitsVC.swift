@@ -70,8 +70,8 @@ class BeyondLimitsVC: UIViewController {
         
         textField.placeholder = "Enter username"
         textField.layer.borderWidth = 2
-        textField.layer.borderColor = UIColor.lightGray.cgColor
-        textField.layer.cornerRadius = 5
+        textField.layer.borderColor = UIColor.systemGray4.cgColor
+        textField.layer.cornerRadius = 10
         textField.textAlignment = .center
         textField.font = UIFont.systemFont(ofSize: 25)
         
