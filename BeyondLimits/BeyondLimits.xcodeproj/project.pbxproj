@@ -12,6 +12,7 @@
 		6DF1722B258EA0F000C3631D /* BeyondLimitsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF1722A258EA0F000C3631D /* BeyondLimitsVC.swift */; };
 		6DF17230258EA0F000C3631D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF1722F258EA0F000C3631D /* Assets.xcassets */; };
 		6DF17233258EA0F000C3631D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF17231258EA0F000C3631D /* LaunchScreen.storyboard */; };
+		6DF17240258FBDB900C3631D /* BLMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF1723F258FBDB900C3631D /* BLMainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6DF1722F258EA0F000C3631D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF17232258EA0F000C3631D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF17234258EA0F000C3631D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF1723F258FBDB900C3631D /* BLMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLMainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		6DF17225258EA0F000C3631D /* BeyondLimits */ = {
 			isa = PBXGroup;
 			children = (
+				6DF1723E258FBD8600C3631D /* Views */,
 				6DF17226258EA0F000C3631D /* AppDelegate.swift */,
 				6DF17228258EA0F000C3631D /* SceneDelegate.swift */,
 				6DF1722A258EA0F000C3631D /* BeyondLimitsVC.swift */,
@@ -62,6 +65,14 @@
 				6DF17234258EA0F000C3631D /* Info.plist */,
 			);
 			path = BeyondLimits;
+			sourceTree = "<group>";
+		};
+		6DF1723E258FBD8600C3631D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6DF1723F258FBDB900C3631D /* BLMainButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -133,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF17240258FBDB900C3631D /* BLMainButton.swift in Sources */,
 				6DF1722B258EA0F000C3631D /* BeyondLimitsVC.swift in Sources */,
 				6DF17227258EA0F000C3631D /* AppDelegate.swift in Sources */,
 				6DF17229258EA0F000C3631D /* SceneDelegate.swift in Sources */,

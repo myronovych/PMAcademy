@@ -12,7 +12,7 @@ class BeyondLimitsVC: UIViewController {
     let ballImageView = UIImageView(image: UIImage(named: "Ball"))
     let beyondLimitsLabel = UILabel()
     let textField = UITextField()
-    let giveDetailsButton = UIButton(type: .system)
+    let giveDetailsButton = BLMainButton(title: "Give me some details", backgroundColor: .red, height: 50)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,13 +88,8 @@ class BeyondLimitsVC: UIViewController {
 
     private func setGiveDetailsButton() {
         view.addSubview(giveDetailsButton)
-        giveDetailsButton.translatesAutoresizingMaskIntoConstraints = false
         
-        giveDetailsButton.backgroundColor = .systemRed
         giveDetailsButton.setTitle("Give me some details", for: .normal)
-        giveDetailsButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 25)
-        giveDetailsButton.layer.cornerRadius = 10
-        giveDetailsButton.titleLabel?.tintColor = .white
         
         let padding: CGFloat = 20
 
@@ -102,7 +97,6 @@ class BeyondLimitsVC: UIViewController {
             giveDetailsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding),
             giveDetailsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
             giveDetailsButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
-            giveDetailsButton.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
 }
