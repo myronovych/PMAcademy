@@ -17,7 +17,7 @@ class BeyondLimitsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         
         setBallImageView()
         setBeyondLimitsLabel()
@@ -26,8 +26,19 @@ class BeyondLimitsVC: UIViewController {
         giveDetailsButton.addTarget(nil, action: #selector(pressedButton), for: .touchUpInside)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     @objc func pressedButton() {
-     print("PRESSED")
+        guard let username = textField.text, !username.isEmpty else {
+            //alert here
+            return
+        }
+        let destVC = ProfileVC()
+        destVC.username = username
+        present(UINavigationController(rootViewController: destVC), animated: true)
     }
     
     private func setBallImageView() {
@@ -49,7 +60,7 @@ class BeyondLimitsVC: UIViewController {
         view.addSubview(beyondLimitsLabel)
         beyondLimitsLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        beyondLimitsLabel.text = "Beyond Limits"
+        beyondLimitsLabel.text = LocalizedStrings.beyondLimits
         beyondLimitsLabel.adjustsFontSizeToFitWidth = true
         beyondLimitsLabel.minimumScaleFactor = 14
         beyondLimitsLabel.font = UIFont.boldSystemFont(ofSize: 40)
@@ -68,7 +79,7 @@ class BeyondLimitsVC: UIViewController {
         view.addSubview(textField)
         textField.translatesAutoresizingMaskIntoConstraints = false
         
-        textField.placeholder = "Enter username"
+        textField.placeholder = LocalizedStrings.enterUsername
         textField.layer.borderWidth = 2
         textField.layer.borderColor = UIColor.systemGray4.cgColor
         textField.layer.cornerRadius = 10
@@ -89,7 +100,7 @@ class BeyondLimitsVC: UIViewController {
     private func setGiveDetailsButton() {
         view.addSubview(giveDetailsButton)
         
-        giveDetailsButton.setTitle("Give me some details", for: .normal)
+        giveDetailsButton.setTitle(LocalizedStrings.giveDetails, for: .normal)
         
         let padding: CGFloat = 20
 

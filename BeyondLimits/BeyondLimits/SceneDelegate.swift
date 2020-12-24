@@ -18,7 +18,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        window.rootViewController = BeyondLimitsVC()
+        window.rootViewController = UINavigationController(rootViewController: BeyondLimitsVC())
         
         self.window = window
         window.makeKeyAndVisible()
@@ -32,13 +32,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func sceneDidBecomeActive(_ scene: UIScene) {
-        // Called when the scene has moved from an inactive state to an active state.
-        // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
+        window?.viewWithTag(221122)?.removeFromSuperview()
     }
     
     func sceneWillResignActive(_ scene: UIScene) {
-        // Called when the scene will move from an active state to an inactive state.
-        // This may occur due to temporary interruptions (ex. an incoming phone call).
+        let blurEffect = UIBlurEffect(style: .regular)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = UIApplication.shared.windows[0].bounds
+        blurEffectView.tag = 221122
+        
+        window?.addSubview(blurEffectView)
     }
     
     func sceneWillEnterForeground(_ scene: UIScene) {
