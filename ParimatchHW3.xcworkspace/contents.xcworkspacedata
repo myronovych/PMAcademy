@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Task3/Task3.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Task2Animations/Task2Animations.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BeyondLimits/BeyondLimits.xcodeproj">
    </FileRef>
    <FileRef
