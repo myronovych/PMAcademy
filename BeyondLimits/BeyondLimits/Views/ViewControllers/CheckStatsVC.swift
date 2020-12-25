@@ -9,10 +9,10 @@ import UIKit
 
 class CheckStatsVC: UIViewController {
     
-    let leftItem = BLItemInfo()
-    let rightItem = BLItemInfo()
+    let leftItem = ItemInfo()
+    let rightItem = ItemInfo()
     let hstack = UIStackView()
-    let button = BLMainButton(title: LocalizedStrings.checkStats, backgroundColor: .red, height: 38)
+    let button = MainButton(title: LocalizedStrings.checkStats, backgroundColor: .red, height: 38)
     
     override func viewDidLoad() {
         super.viewDidLoad()

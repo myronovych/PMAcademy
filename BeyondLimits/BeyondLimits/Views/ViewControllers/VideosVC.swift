@@ -15,8 +15,8 @@ class VideosVC: CheckStatsVC {
     }
     
     private func configureInfoItems() {
-        leftItem.set(itemInfoType: .videos, count: counter)
-        rightItem.set(itemInfoType: .hearts, count: counter)
+        leftItem.set(itemInfoType: .videos, count: Constants.counter)
+        rightItem.set(itemInfoType: .hearts, count: Constants.counter)
     }
-
+    
 }

@@ -1,5 +1,5 @@
 //
-//  BLTitleLabel.swift
+//  TitleLabel.swift
 //  BeyondLimits
 //
 //  Created by Oleksandr Myronovych on 20.12.2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BLTitleLabel: UILabel {
+class TitleLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)

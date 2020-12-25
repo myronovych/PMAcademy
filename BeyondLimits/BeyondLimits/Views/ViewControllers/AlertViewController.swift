@@ -8,11 +8,11 @@
 import UIKit
 
 class AlertViewController: UIViewController {
-
+    
     let containerView = AlertContainerView()
-    let titleLabel = BLTitleLabel(textAlignment: .center, fontSize: 20)
+    let titleLabel = TitleLabel(textAlignment: .center, fontSize: 20)
     let bodyLabel = UILabel()
-    let actionButton = BLMainButton(title: "OK", backgroundColor: .red, height: 44)
+    let actionButton = MainButton(title: "OK", backgroundColor: .red, height: 44)
     
     var titleText: String?
     var bodyText: String?
@@ -45,7 +45,7 @@ class AlertViewController: UIViewController {
     private func configureContainer() {
         view.addSubview(containerView)
         
-
+        
         NSLayoutConstraint.activate([
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             containerView.centerYAnchor.constraint(equalTo: view.centerYAnchor),

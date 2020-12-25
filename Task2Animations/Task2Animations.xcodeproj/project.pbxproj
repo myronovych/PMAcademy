@@ -15,7 +15,6 @@
 		6DF0B96825955768007AAE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF0B96625955768007AAE63 /* LaunchScreen.storyboard */; };
 		6DF0B9762595BDB5007AAE63 /* ChooseAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0B9752595BDB5007AAE63 /* ChooseAnimationViewController.swift */; };
 		6DF0B9792595C005007AAE63 /* SecondAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0B9782595C005007AAE63 /* SecondAnimation.swift */; };
-		6DF0B97D2595C828007AAE63 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0B97C2595C828007AAE63 /* UIView+Animations.swift */; };
 		6DF0B9802595C9EE007AAE63 /* ThirdAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0B97F2595C9EE007AAE63 /* ThirdAnimation.swift */; };
 		6DF0B9842595CABE007AAE63 /* FourthAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0B9832595CABE007AAE63 /* FourthAnimation.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +30,6 @@
 		6DF0B96925955768007AAE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DF0B9752595BDB5007AAE63 /* ChooseAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseAnimationViewController.swift; sourceTree = "<group>"; };
 		6DF0B9782595C005007AAE63 /* SecondAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAnimation.swift; sourceTree = "<group>"; };
-		6DF0B97C2595C828007AAE63 /* UIView+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
 		6DF0B97F2595C9EE007AAE63 /* ThirdAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdAnimation.swift; sourceTree = "<group>"; };
 		6DF0B9832595CABE007AAE63 /* FourthAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,20 +64,27 @@
 		6DF0B95A25955768007AAE63 /* Task2Animations */ = {
 			isa = PBXGroup;
 			children = (
+				6DF0B9752595BDB5007AAE63 /* ChooseAnimationViewController.swift */,
+				6DF0B9D42595EB69007AAE63 /* Animations */,
 				6DF0B95B25955768007AAE63 /* AppDelegate.swift */,
 				6DF0B95D25955768007AAE63 /* SceneDelegate.swift */,
-				6DF0B95F25955768007AAE63 /* FirstAnimation.swift */,
-				6DF0B9782595C005007AAE63 /* SecondAnimation.swift */,
-				6DF0B97F2595C9EE007AAE63 /* ThirdAnimation.swift */,
-				6DF0B9832595CABE007AAE63 /* FourthAnimation.swift */,
 				6DF0B96125955768007AAE63 /* Main.storyboard */,
 				6DF0B96425955768007AAE63 /* Assets.xcassets */,
 				6DF0B96625955768007AAE63 /* LaunchScreen.storyboard */,
 				6DF0B96925955768007AAE63 /* Info.plist */,
-				6DF0B9752595BDB5007AAE63 /* ChooseAnimationViewController.swift */,
-				6DF0B97C2595C828007AAE63 /* UIView+Animations.swift */,
 			);
 			path = Task2Animations;
+			sourceTree = "<group>";
+		};
+		6DF0B9D42595EB69007AAE63 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0B95F25955768007AAE63 /* FirstAnimation.swift */,
+				6DF0B9782595C005007AAE63 /* SecondAnimation.swift */,
+				6DF0B97F2595C9EE007AAE63 /* ThirdAnimation.swift */,
+				6DF0B9832595CABE007AAE63 /* FourthAnimation.swift */,
+			);
+			path = Animations;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +158,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DF0B9792595C005007AAE63 /* SecondAnimation.swift in Sources */,
-				6DF0B97D2595C828007AAE63 /* UIView+Animations.swift in Sources */,
 				6DF0B9802595C9EE007AAE63 /* ThirdAnimation.swift in Sources */,
 				6DF0B96025955768007AAE63 /* FirstAnimation.swift in Sources */,
 				6DF0B95C25955768007AAE63 /* AppDelegate.swift in Sources */,
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myronovych.Task2Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,7 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = myronovych.Task2Animations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

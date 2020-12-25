@@ -16,7 +16,7 @@ class ProfileVC: UIViewController {
     let bioLabel = UILabel()
     let videoStatsView = UIView()
     let gamesStatsView = UIView()
-
+    
     
     
     override func viewDidLoad() {
@@ -38,7 +38,7 @@ class ProfileVC: UIViewController {
         view.backgroundColor = .systemBackground
         configureDoneButton()
     }
-
+    
     private func configureDoneButton() {
         let button = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(popVC))
         button.tintColor = .red
@@ -48,7 +48,7 @@ class ProfileVC: UIViewController {
     @objc func popVC() {
         dismiss(animated: true)
     }
-   
+    
     private func configureAvatar() {
         view.addSubview(avatarImageView)
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -56,7 +56,7 @@ class ProfileVC: UIViewController {
         avatarImageView.layer.cornerRadius = 65
         avatarImageView.clipsToBounds = true
         
-         
+        
         NSLayoutConstraint.activate([
             avatarImageView.widthAnchor.constraint(equalToConstant: 130),
             avatarImageView.heightAnchor.constraint(equalToConstant: 130),
@@ -136,10 +136,10 @@ class ProfileVC: UIViewController {
     }
     
     private func add(childVC: UIViewController, to containerView: UIView) {
-            addChild(childVC)
-            containerView.addSubview(childVC.view)
-            childVC.view.frame = containerView.bounds
-            childVC.didMove(toParent: self)
-        }
-
+        addChild(childVC)
+        containerView.addSubview(childVC.view)
+        childVC.view.frame = containerView.bounds
+        childVC.didMove(toParent: self)
+    }
+    
 }

@@ -12,8 +12,8 @@ class BeyondLimitsVC: UIViewController {
     let ballImageView = UIImageView(image: UIImage(named: "Ball"))
     let beyondLimitsLabel = UILabel()
     let textField = UITextField()
-    let giveDetailsButton = BLMainButton(title: "Give me some details", backgroundColor: .red, height: 50)
-
+    let giveDetailsButton = MainButton(title: "Give me some details", backgroundColor: .red, height: 50)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -95,15 +95,15 @@ class BeyondLimitsVC: UIViewController {
             textField.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
-
-
+    
+    
     private func setGiveDetailsButton() {
         view.addSubview(giveDetailsButton)
         
         giveDetailsButton.setTitle(LocalizedStrings.giveDetails, for: .normal)
         
         let padding: CGFloat = 20
-
+        
         NSLayoutConstraint.activate([
             giveDetailsButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -padding),
             giveDetailsButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),

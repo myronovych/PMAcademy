@@ -1,5 +1,5 @@
 //
-//  BLItemInfo.swift
+//  ItemInfo.swift
 //  BeyondLimits
 //
 //  Created by Oleksandr Myronovych on 20.12.2020.
@@ -11,11 +11,11 @@ enum ItemInfoType {
     case videos, hearts, games, wins
 }
 
-class BLItemInfo: UIView {
+class ItemInfo: UIView {
     
     var iconImageView = UIImageView()
-    var titleLabel = BLTitleLabel(textAlignment: .left, fontSize: 20)
-    var countLabel = BLTitleLabel(textAlignment: .center, fontSize: 20)
+    var titleLabel = TitleLabel(textAlignment: .left, fontSize: 20)
+    var countLabel = TitleLabel(textAlignment: .center, fontSize: 20)
     
     override init(frame: CGRect) {
         super.init(frame: .zero)

@@ -15,8 +15,8 @@ class GamesVC: CheckStatsVC {
     }
     
     private func configureInfoItems() {
-        leftItem.set(itemInfoType: .games, count: counter)
-        rightItem.set(itemInfoType: .wins, count: counter)
+        leftItem.set(itemInfoType: .games, count: Constants.counter)
+        rightItem.set(itemInfoType: .wins, count: Constants.counter)
     }
-
+    
 }

@@ -13,18 +13,18 @@ class ChooseAnimationViewController: UIViewController {
     let secondButton = UIButton()
     let thirdButton = UIButton()
     let fourthButton = UIButton()
-
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setUpFirstButton()
         setupSecondButton()
         setupThirdButton()
         setupFourthButton()
     }
     
-
+    
     private func setUpFirstButton() {
         view.addSubview(firstButton)
         firstButton.translatesAutoresizingMaskIntoConstraints = false
@@ -112,5 +112,5 @@ class ChooseAnimationViewController: UIViewController {
         let destVC = FourthAnimation()
         show(destVC, sender: self)
     }
-
+    
 }

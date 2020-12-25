@@ -1,5 +1,5 @@
 //
-//  BLMainButton.swift
+//  MainButton.swift
 //  BeyondLimits
 //
 //  Created by Oleksandr Myronovych on 20.12.2020.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BLMainButton: UIButton {
+class MainButton: UIButton {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
