@@ -17,21 +17,25 @@ class SecondAnimation: UIViewController {
     let squareColors: [UIColor] = [.black, .red, .green, .orange, .white]
     let circleColors: [UIColor] = [.white, .blue, .yellow, .systemPink, .black]
     
+    var timer = Timer()
+    var count = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         
         setUpSquare()
-        setUpCircle()    }
+        setUpCircle()
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeColor), userInfo: nil, repeats: true)
+    }
     
-    override func viewDidAppear(_ animated: Bool) {
-        for i in 0..<5 {
-            UIView.animate(withDuration: 4, delay: 0, options: .curveLinear, animations: {
-                self.square.backgroundColor = self.squareColors[i]
-            }) { (_) in
-                print("Completed")
-            }
-
+    @objc func changeColor() {
+        count += 1
+        if (count > 4) {
+            timer.invalidate()
+        } else {
+            square.backgroundColor = squareColors[count]
+            circle.backgroundColor = circleColors[count]
         }
     }
     

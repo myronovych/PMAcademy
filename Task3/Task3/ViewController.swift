@@ -11,9 +11,9 @@ class ViewController: UIViewController {
     
     var circle = UIView()
     let colors: [UIColor] = [.yellow, .orange, .red, .blue, .green, .purple]
-
     
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -96,9 +96,9 @@ class ViewController: UIViewController {
             }
             print("One tap")
         case 2:
-                        doubleTap()
+            doubleTap()
             print("Double tap")
-
+            
         default:
             break
         }
